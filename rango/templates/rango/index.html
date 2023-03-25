@@ -1,0 +1,40 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+<!-- 	{% block css_fiels %}
+  <link rel="stylesheet" type="text/css" href="{% static 'rango.css'%}">
+{% endblock %} 
+ -->
+
+<body>
+	{% block content %}
+	<h1 class="h1">Rango says...</h1>
+	<div>
+		<nav>
+			<ul>
+				<li>
+					<a href="room/">Room Page</a>
+					<a href="about/">About Page</a> 
+					<a href="contact/">Contact Page</a>
+					<a href="product/">Product Page</a> 
+				
+				</li>
+			</ul>
+		</nav>
+	</div>
+
+	<div>
+		<h2 class="h2">Hey there partner !</h2>
+		 <br/>
+		<strong>{{boldmessage}}</strong><br/>
+	</div>
+	<div>
+
+		<a href="about/" class="abt">About</a> <br/>
+		<img src="{% static 'images/Programmer.jpg'%}" alt="picture of Ken" class="img">
+
+	
+	</div>
+{% endblock content %}
+</body>
